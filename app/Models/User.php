@@ -9,8 +9,10 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
+    /** @use HasFactory<\Sharry\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
+
+    protected static string $factory = \Sharry\Database\Factories\UserFactory::class;
 
     /**
      * The attributes that are mass assignable.

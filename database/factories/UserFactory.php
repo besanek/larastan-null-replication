@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Sharry\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
@@ -11,6 +11,8 @@ use Illuminate\Support\Str;
  */
 class UserFactory extends Factory
 {
+    protected $model = \App\Models\User::class;
+
     /**
      * The current password being used by the factory.
      */
